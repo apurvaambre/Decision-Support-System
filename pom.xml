@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.raven</groupId>
+    <artifactId>ui-dashboard</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <exec.mainClass>com.raven.login.log_in</exec.mainClass>
+        
+    </properties>
+    <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+    <dependencies>
+  <dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi</artifactId>
+    <version>5.2.3</version>
+  </dependency>
+ <dependency>
+        <groupId>org.apache.poi</groupId>
+        <artifactId>poi-ooxml</artifactId>
+        <version>5.2.3</version>
+    </dependency>
+    <dependency>
+    <groupId>org.jfree</groupId>
+    <artifactId>jfreechart</artifactId>
+    <version>1.5.4</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/net.sf.ucanaccess/ucanaccess -->
+<dependency>
+    <groupId>net.sf.ucanaccess</groupId>
+    <artifactId>ucanaccess</artifactId>
+    <version>5.0.1</version>
+</dependency>
+        
+    </dependencies>
+    <name>ui-dashboard</name>
+    <build>
+  <resources>
+    <resource>
+            <directory>src/main/java/</directory>
+            <includes>
+                <include>**/*</include>
+            </includes>
+            <filtering>false</filtering>
+    </resource>
+  </resources>
+</build>
+    
+</project>
